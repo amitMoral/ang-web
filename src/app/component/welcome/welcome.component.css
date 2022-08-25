@@ -1,0 +1,25 @@
+.list-one {
+    list-style: none;
+    padding: 0;
+}
+
+.list-one li {
+    position: relative;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.list-one li:last-child {
+    margin-bottom: 0;
+}
+
+.list-one li::before {
+    content: "\f633";
+    font-family: bootstrap-icons !important;
+    color: var(--primary);
+    position: absolute;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: -2.5rem;
+    top: -4px;
+}
